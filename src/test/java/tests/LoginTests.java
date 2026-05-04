@@ -1,5 +1,6 @@
 package tests;
 
+import models.User;
 import org.checkerframework.checker.units.qual.A;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -71,5 +72,26 @@ public class LoginTests extends  TestBase{
 
         Assert.assertTrue(app.getHelperUser().isAlertPresent("Wrong email or password"));
 
+    }
+
+    @Test
+    public void loginSuccess1(){
+        //User user = new User();
+        //user.setEmail("margo@gmail.com");
+        //user.setPassword("Mmar123456$");
+        User user=new User().setEmail("margo@gmail.com").setPassword("Mmar123456$");
+
+        app.getHelperUser().openLoginRegistrationForm();
+        //app.getHelperUser().fillLoginRegistrationForm("margo@gmail.com", "Mmar123456$");
+        app.getHelperUser().fillLoginRegistrationForm(user);
+        app.getHelperUser().submitLogin();
+
+        //Assert
+        //Assert.assertEquals();
+        //Assert.assertNotEquals();
+        //Assert.assertTrue();
+        //Assert.assertFalse();
+
+        Assert.assertTrue(app.getHelperUser().isLogged());
     }
 }
