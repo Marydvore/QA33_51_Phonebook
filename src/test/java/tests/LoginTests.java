@@ -19,7 +19,7 @@ public class LoginTests extends  TestBase{
     @Test
     public void loginSuccess(){
         app.getHelperUser().openLoginRegistrationForm();
-        app.getHelperUser().fillLoginRegistrationForm("margo@gmail.com", "Mmar123456$");
+        app.getHelperUser().fillLoginRegistrationForm("art276@art.com", "$Art1$2$3456789");
         app.getHelperUser().submitLogin();
 
         //Assert
