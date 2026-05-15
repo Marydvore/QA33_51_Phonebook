@@ -2,6 +2,7 @@ package manager;
 
 import models.Contact;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -13,8 +14,21 @@ public class HelperContact extends HelperBase {
     }
 
     public void openContactForm() {
-        pause(2000);
+        //pause(2000);
         click(By.cssSelector("a[href=\"/add\"]"));// a[href='/add']
+    }
+
+    public void clearFiledName(){
+        WebElement name = wd.findElement(By.xpath("//input[@placeholder='Name']"));
+        String operationSystem = System.getProperty("os.name");
+        System.out.println(operationSystem);
+        if (operationSystem.startsWith("Win")) {
+            name.sendKeys(Keys.chord(Keys.CONTROL, "a"));
+        }
+        if (operationSystem.startsWith("Mac")) {
+            name.sendKeys(Keys.chord(Keys.COMMAND, "a"));
+        }
+        name.sendKeys(Keys.DELETE);
     }
 
     public void fillContactForm(Contact contact) {
@@ -30,6 +44,7 @@ public class HelperContact extends HelperBase {
         //cssSelector("[placeholder='Address']")
         type(By.xpath("//input[@placeholder='description']"), contact.getDescription());
         //cssSelector("[placeholder='description']")
+        pause(3000);
     }
 
     public void SaveContact() {
@@ -54,5 +69,14 @@ public class HelperContact extends HelperBase {
             }
         }
         return false;
+    }
+
+    public boolean isBtnSaveNoActive() {
+        return isElementPresent(By.cssSelector(".add_form__2rsm2 input[value='']:not(:last-of-type)"));
+    }
+
+    public boolean isBtnAddIsBlack() {
+        return isElementPresent(By.cssSelector(".active"));
+        // //a[@style='border: 1px solid black; background-color: black; color: white;']
     }
 }

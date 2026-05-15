@@ -61,5 +61,97 @@ public class AddNewContactsTests extends TestBase {
         Assert.assertTrue(app.getHelperContact().isContactAddedByPhone(contact.getPhone()));
     }
 
+    @Test
+    public void addNewContactFiledNameIsEmpty() {
+        Contact contact = Contact.builder()
+                .name(null)
+                .lastName("Dor")
+                .phone("0541035974")
+                .email("tony@dvo.com")
+                .address("Dali av. 79/147")
+                .description(null)
+                .build();
 
+        app.getHelperContact().openContactForm();
+        app.getHelperContact().clearFiledName();
+        app.getHelperContact().fillContactForm(contact);
+        app.getHelperContact().SaveContact();
+
+        Assert.assertTrue(app.getHelperContact().isBtnSaveNoActive());
+        Assert.assertTrue(app.getHelperContact().isBtnAddIsBlack());
+    }
+
+    @Test
+    public void addNewContactFiledLastNameIsEmpty() {
+        Contact contact = Contact.builder()
+                .name("Tony001")
+                .lastName(null)
+                .phone("0541035974")
+                .email("tony@dvo.com")
+                .address("Dali av. 79/147")
+                .description(null)
+                .build();
+
+        app.getHelperContact().openContactForm();
+        app.getHelperContact().fillContactForm(contact);
+        app.getHelperContact().SaveContact();
+
+        Assert.assertTrue(app.getHelperContact().isBtnSaveNoActive());
+        Assert.assertTrue(app.getHelperContact().isBtnAddIsBlack());
+    }
+
+    @Test
+    public void addNewContactWrongPhone() {
+        Contact contact = Contact.builder()
+                .name("Tony001")
+                .lastName("Brook")
+                .phone("0541035")
+                .email("tony@dvo.com")
+                .address("Dali av. 79/147")
+                .description(null)
+                .build();
+
+        app.getHelperContact().openContactForm();
+        app.getHelperContact().fillContactForm(contact);
+        app.getHelperContact().SaveContact();
+
+        Assert.assertTrue(app.getHelperUser().isAlertPresent("Phone not valid: Phone number must contain only digits! And length min 10, max 15!"));
+    }
+
+    @Test
+    public void addNewContactWrongEmail() {
+        Contact contact = Contact.builder()
+                .name("Tony001")
+                .lastName("Brook")
+                .phone("0541035789")
+                .email("tonydvo.com")
+                .address("Dali av. 79/147")
+                .description(null)
+                .build();
+
+        app.getHelperContact().openContactForm();
+        app.getHelperContact().fillContactForm(contact);
+        app.getHelperContact().SaveContact();
+
+        Assert.assertTrue(app.getHelperUser().isAlertPresent("Email not valid: must be a well-formed email address"));
+    }
+
+    @Test
+    public void addNewContactWrongAddress() {
+        Contact contact = Contact.builder()
+                .name("Tony001")
+                .lastName("Brook")
+                .phone("0541035974")
+                .email("tony@dvo.com")
+                .address(null)
+                .description(null)
+                .build();
+
+        app.getHelperContact().openContactForm();
+        app.getHelperContact().fillContactForm(contact);
+        app.getHelperContact().SaveContact();
+
+        Assert.assertTrue(app.getHelperContact().isBtnSaveNoActive());
+        Assert.assertTrue(app.getHelperContact().isBtnAddIsBlack());
+    }
 }
