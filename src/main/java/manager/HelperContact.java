@@ -18,19 +18,6 @@ public class HelperContact extends HelperBase {
         click(By.cssSelector("a[href=\"/add\"]"));// a[href='/add']
     }
 
-    public void clearFiledName(){
-        WebElement name = wd.findElement(By.xpath("//input[@placeholder='Name']"));
-        String operationSystem = System.getProperty("os.name");
-        System.out.println(operationSystem);
-        if (operationSystem.startsWith("Win")) {
-            name.sendKeys(Keys.chord(Keys.CONTROL, "a"));
-        }
-        if (operationSystem.startsWith("Mac")) {
-            name.sendKeys(Keys.chord(Keys.COMMAND, "a"));
-        }
-        name.sendKeys(Keys.DELETE);
-    }
-
     public void fillContactForm(Contact contact) {
         type(By.xpath("//input[@placeholder='Name']"), contact.getName());
         //cssSelector("[placeholder='Name']")
@@ -44,7 +31,7 @@ public class HelperContact extends HelperBase {
         //cssSelector("[placeholder='Address']")
         type(By.xpath("//input[@placeholder='description']"), contact.getDescription());
         //cssSelector("[placeholder='description']")
-        pause(3000);
+        //pause(3000);
     }
 
     public void SaveContact() {
@@ -75,8 +62,8 @@ public class HelperContact extends HelperBase {
         return isElementPresent(By.cssSelector(".add_form__2rsm2 input[value='']:not(:last-of-type)"));
     }
 
-    public boolean isBtnAddIsBlack() {
-        return isElementPresent(By.cssSelector(".active"));
+    public boolean isAddContactPageStillDisplayed() {
+        return isElementPresent(By.cssSelector(".active[href='/add']"));
         // //a[@style='border: 1px solid black; background-color: black; color: white;']
     }
 }

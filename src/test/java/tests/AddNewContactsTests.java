@@ -33,6 +33,7 @@ public class AddNewContactsTests extends TestBase {
 
         app.getHelperContact().openContactForm();
         app.getHelperContact().fillContactForm(contact);
+        app.getHelperContact().getScreen("src/test/screenchots/screen-"+i+".png");
         app.getHelperContact().SaveContact();
 
         Assert.assertTrue(app.getHelperContact().isContactAddedByName(contact.getName()));
@@ -69,16 +70,16 @@ public class AddNewContactsTests extends TestBase {
                 .phone("0541035974")
                 .email("tony@dvo.com")
                 .address("Dali av. 79/147")
-                .description(null)
+                .description("NameIsEmpty")
                 .build();
 
         app.getHelperContact().openContactForm();
-        app.getHelperContact().clearFiledName();
+        //app.getHelperContact().clearFiledName();
         app.getHelperContact().fillContactForm(contact);
         app.getHelperContact().SaveContact();
 
         Assert.assertTrue(app.getHelperContact().isBtnSaveNoActive());
-        Assert.assertTrue(app.getHelperContact().isBtnAddIsBlack());
+        Assert.assertTrue(app.getHelperContact().isAddContactPageStillDisplayed());
     }
 
     @Test
@@ -89,7 +90,7 @@ public class AddNewContactsTests extends TestBase {
                 .phone("0541035974")
                 .email("tony@dvo.com")
                 .address("Dali av. 79/147")
-                .description(null)
+                .description("LastNameIsEmpty")
                 .build();
 
         app.getHelperContact().openContactForm();
@@ -97,7 +98,7 @@ public class AddNewContactsTests extends TestBase {
         app.getHelperContact().SaveContact();
 
         Assert.assertTrue(app.getHelperContact().isBtnSaveNoActive());
-        Assert.assertTrue(app.getHelperContact().isBtnAddIsBlack());
+        Assert.assertTrue(app.getHelperContact().isAddContactPageStillDisplayed());
     }
 
     @Test
@@ -105,17 +106,18 @@ public class AddNewContactsTests extends TestBase {
         Contact contact = Contact.builder()
                 .name("Tony001")
                 .lastName("Brook")
-                .phone("0541035")
+                .phone("04568")
                 .email("tony@dvo.com")
                 .address("Dali av. 79/147")
-                .description(null)
+                .description("WrongPhone")
                 .build();
 
         app.getHelperContact().openContactForm();
         app.getHelperContact().fillContactForm(contact);
         app.getHelperContact().SaveContact();
 
-        Assert.assertTrue(app.getHelperUser().isAlertPresent("Phone not valid: Phone number must contain only digits! And length min 10, max 15!"));
+        Assert.assertTrue(app.getHelperContact().isAlertPresent("Phone not valid"));
+        Assert.assertTrue(app.getHelperContact().isAddContactPageStillDisplayed());
     }
 
     @Test
@@ -126,14 +128,15 @@ public class AddNewContactsTests extends TestBase {
                 .phone("0541035789")
                 .email("tonydvo.com")
                 .address("Dali av. 79/147")
-                .description(null)
+                .description("WrongEmail")
                 .build();
 
         app.getHelperContact().openContactForm();
         app.getHelperContact().fillContactForm(contact);
         app.getHelperContact().SaveContact();
 
-        Assert.assertTrue(app.getHelperUser().isAlertPresent("Email not valid: must be a well-formed email address"));
+        Assert.assertTrue(app.getHelperContact().isAlertPresent("Email not valid"));
+        Assert.assertTrue(app.getHelperContact().isAddContactPageStillDisplayed());
     }
 
     @Test
@@ -143,7 +146,7 @@ public class AddNewContactsTests extends TestBase {
                 .lastName("Brook")
                 .phone("0541035974")
                 .email("tony@dvo.com")
-                .address(null)
+                .address("")
                 .description(null)
                 .build();
 
@@ -152,6 +155,6 @@ public class AddNewContactsTests extends TestBase {
         app.getHelperContact().SaveContact();
 
         Assert.assertTrue(app.getHelperContact().isBtnSaveNoActive());
-        Assert.assertTrue(app.getHelperContact().isBtnAddIsBlack());
+        Assert.assertTrue(app.getHelperContact().isAddContactPageStillDisplayed());
     }
 }
