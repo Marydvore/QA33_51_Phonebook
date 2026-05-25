@@ -14,6 +14,7 @@ public class RegistrationTests extends TestBase {
         //If button 'Sign Out' present ---> Logout
         if (app.getHelperUser().isLogged()) {
             app.getHelperUser().logout();
+            logger.info("Before method finished logout");
         }
     }
 
@@ -26,39 +27,48 @@ public class RegistrationTests extends TestBase {
                 .setEmail("art" + z + "@art.com")
                 .setPassword("$Art1$2$3456789");
 
+        logger.info("Test data ---> email: 'art" + z + "@art.com' & password: '$Art1$2$3456789'");
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm(user);
         app.getHelperUser().submitRegistration();
 
         Assert.assertTrue(app.getHelperUser().isLogged());
         Assert.assertTrue(app.getHelperUser().isNoContactsHereDisplayed());
+        logger.info("Assert check is element button 'Sign out' present");
+        logger.info(("Assert check is message present with text: 'No contacts here'"));
     }
 
     @Test(description = "Bug report #5648 Fixed")
     public void RegistrationWrongEmail() {
+        logger.info("Test data ---> email: 'artart.com' & password: '$Art1$2$3456789'");
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm("artart.com", "$Art1$2$3456789");
         app.getHelperUser().submitRegistration();
 
         Assert.assertTrue(app.getHelperUser().isAlertPresent("Wrong email or password format"));
+        logger.info(("Assert check is alert present with error text 'Wrong email or password format'"));
     }
 
     @Test
     public void RegistrationWrongPassword() {
+        logger.info("Test data ---> email: 'art11@art.com' & password: '$Art1'");
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm("art11@art.com", "$Art1");
         app.getHelperUser().submitRegistration();
 
         Assert.assertTrue(app.getHelperUser().isAlertPresent("Wrong email or password format"));
+        logger.info(("Assert check is alert present with error text 'Wrong email or password format'"));
     }
 
     @Test
     public void RegistrationExistsUser() {
+        logger.info("Test data ---> email: 'margo@gmail.com' & password: 'Mmar123456$'");
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm("margo@gmail.com", "Mmar123456$");
         app.getHelperUser().submitRegistration();
 
         Assert.assertTrue(app.getHelperUser().isAlertPresent("User already exist"));
+        logger.info(("Assert check is alert present with error text 'User already exist'"));
 
     }
 }
