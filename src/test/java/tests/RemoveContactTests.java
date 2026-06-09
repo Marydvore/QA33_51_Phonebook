@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class RemoveContactTests extends TestBase {
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition() {
         if (!app.getHelperUser().isLogged()) {
             app.getHelperUser().login(new User().setEmail("art276@art.com")
@@ -17,7 +17,7 @@ public class RemoveContactTests extends TestBase {
         app.getHelperContact().provideContacts();// if list of contacts <3 ---> add 3 contacts
     }
 
-    @Test
+    @Test(groups = {"smoke"})
     public void removeFirstContact(){
         //Assert size contactList less by one
         Assert.assertEquals(app.getHelperContact().removeOneContact(), 1);

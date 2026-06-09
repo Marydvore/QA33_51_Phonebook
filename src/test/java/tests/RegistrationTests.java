@@ -9,7 +9,7 @@ import java.util.Random;
 
 public class RegistrationTests extends TestBase {
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition() {
         //If button 'Sign Out' present ---> Logout
         if (app.getHelperUser().isLogged()) {
@@ -18,7 +18,7 @@ public class RegistrationTests extends TestBase {
         }
     }
 
-    @Test
+    @Test(groups = {"smoke"})
     public void registrationSuccess() {
         int z = (int) (System.currentTimeMillis() / 1000 % 3600);
         System.out.println(z);
@@ -38,7 +38,7 @@ public class RegistrationTests extends TestBase {
         logger.info(("Assert check is message present with text: 'No contacts here'"));
     }
 
-    @Test(description = "Bug report #5648 Fixed")
+    @Test(description = "Bug report #5648 Fixed", groups = {"smoke"})
     public void RegistrationWrongEmail() {
         logger.info("Test data ---> email: 'artart.com' & password: '$Art1$2$3456789'");
         app.getHelperUser().openLoginRegistrationForm();
