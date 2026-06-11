@@ -1,0 +1,32 @@
+19:21:53.218 INFO  manager.TestNGListener -- Start testing on date -->Thu Jun 04 19:21:53 IDT 2026
+19:21:53.305 INFO  manager.TestNGListener -- Start test --> null
+19:21:53.307 INFO  manager.TestNGListener -- Skipped test --> null
+19:21:53.315 INFO  manager.TestNGListener -- Start test --> null
+19:21:53.316 INFO  manager.TestNGListener -- Skipped test --> null
+19:21:53.325 INFO  manager.TestNGListener -- Start test --> null
+19:21:53.327 INFO  manager.TestNGListener -- Skipped test --> null
+19:21:53.339 INFO  manager.TestNGListener -- Start test --> null
+19:21:53.340 INFO  manager.TestNGListener -- Skipped test --> null
+19:21:53.355 INFO  manager.TestNGListener -- Start test --> null
+19:21:53.360 INFO  manager.TestNGListener -- Skipped test --> null
+19:21:53.372 INFO  manager.TestNGListener -- Start test --> null
+19:21:53.373 INFO  manager.TestNGListener -- Skipped test --> null
+19:21:53.376 INFO  manager.TestNGListener -- Start test --> null
+19:21:53.378 INFO  manager.TestNGListener -- Skipped test --> null
+19:21:53.384 INFO  manager.TestNGListener -- Start test --> null
+19:21:53.385 INFO  manager.TestNGListener -- Skipped test --> null
+19:21:53.391 INFO  manager.TestNGListener -- Start test --> null
+19:21:53.392 INFO  manager.TestNGListener -- Skipped test --> null
+19:21:53.396 INFO  manager.TestNGListener -- Start test --> null
+19:21:53.397 INFO  manager.TestNGListener -- Skipped test --> null
+19:21:53.403 INFO  manager.TestNGListener -- Start test --> null
+19:21:53.404 INFO  manager.TestNGListener -- Skipped test --> null
+19:21:53.415 INFO  manager.TestNGListener -- Start test --> null
+19:21:53.417 INFO  manager.TestNGListener -- Skipped test --> null
+19:21:53.424 INFO  manager.TestNGListener -- Start test --> null
+19:21:53.425 INFO  manager.TestNGListener -- Skipped test --> null
+19:21:53.430 INFO  manager.TestNGListener -- Start test --> null
+19:21:53.432 INFO  manager.TestNGListener -- Skipped test --> null
+19:21:53.438 INFO  manager.TestNGListener -- Start test --> null
+19:21:53.440 INFO  manager.TestNGListener -- Skipped test --> null
+19:21:53.442 INFO  manager.TestNGListener -- Stop testing on date -->Thu Jun 04 19:21:53 IDT 2026

@@ -1,0 +1,24 @@
+19:38:35.935 INFO  manager.TestNGListener -- Start testing on date -->Thu Jun 04 19:38:35 IDT 2026
+19:38:36.020 INFO  manager.TestNGListener -- Start test --> null
+19:38:36.024 INFO  manager.TestNGListener -- Skipped test --> null
+19:38:36.031 INFO  manager.TestNGListener -- Start test --> null
+19:38:36.033 INFO  manager.TestNGListener -- Skipped test --> null
+19:38:36.036 INFO  manager.TestNGListener -- Start test --> null
+19:38:36.039 INFO  manager.TestNGListener -- Skipped test --> null
+19:38:36.048 INFO  manager.TestNGListener -- Start test --> null
+19:38:36.049 INFO  manager.TestNGListener -- Skipped test --> null
+19:38:36.053 INFO  manager.TestNGListener -- Start test --> null
+19:38:36.056 INFO  manager.TestNGListener -- Skipped test --> null
+19:38:36.066 INFO  manager.TestNGListener -- Start test --> null
+19:38:36.067 INFO  manager.TestNGListener -- Skipped test --> null
+19:38:36.070 INFO  manager.TestNGListener -- Start test --> null
+19:38:36.074 INFO  manager.TestNGListener -- Skipped test --> null
+19:38:36.079 INFO  manager.TestNGListener -- Start test --> null
+19:38:36.080 INFO  manager.TestNGListener -- Skipped test --> null
+19:38:36.084 INFO  manager.TestNGListener -- Start test --> null
+19:38:36.084 INFO  manager.TestNGListener -- Skipped test --> null
+19:38:36.090 INFO  manager.TestNGListener -- Start test --> null
+19:38:36.091 INFO  manager.TestNGListener -- Skipped test --> null
+19:38:36.097 INFO  manager.TestNGListener -- Start test --> null
+19:38:36.097 INFO  manager.TestNGListener -- Skipped test --> null
+19:38:36.101 INFO  manager.TestNGListener -- Stop testing on date -->Thu Jun 04 19:38:36 IDT 2026

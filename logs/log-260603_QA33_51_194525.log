@@ -1,0 +1,279 @@
+19:45:33.758 INFO  manager.ApplicationManager -- All tests runs in Chrome Browser
+19:45:35.288 INFO  manager.ApplicationManager -- The link --->https://telranedu.web.app/home
+19:45:35.327 INFO  manager.TestNGListener -- Start testing on date -->Wed Jun 03 19:45:35 IDT 2026
+19:45:40.483 INFO  manager.ListenerWD -- Before find element-->By.cssSelector: a[href='/login']
+19:45:40.547 INFO  manager.ListenerWD -- After find element-->By.cssSelector: a[href='/login']
+19:45:40.557 INFO  manager.ListenerWD -- Location of element-->a
+19:45:40.589 INFO  manager.ListenerWD -- Before click element-->atext-->LOGIN
+19:45:40.738 INFO  manager.ListenerWD -- After click element-->a
+19:45:40.745 INFO  manager.ListenerWD -- Before find element-->By.name: email
+19:45:40.801 INFO  manager.ListenerWD -- After find element-->By.name: email
+19:45:40.814 INFO  manager.ListenerWD -- Location of element-->input
+19:45:40.845 INFO  manager.ListenerWD -- Before click element-->inputtext-->
+19:45:40.960 INFO  manager.ListenerWD -- After click element-->input
+19:45:41.038 INFO  manager.ListenerWD -- SendKeys-->
+19:45:41.056 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:41.138 INFO  manager.ListenerWD -- SendKeys-->
+19:45:41.143 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:41.215 INFO  manager.ListenerWD -- SendKeys-->
+19:45:41.221 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:41.298 INFO  manager.ListenerWD -- Before find element-->By.xpath: //input[@placeholder='Password']
+19:45:41.348 INFO  manager.ListenerWD -- After find element-->By.xpath: //input[@placeholder='Password']
+19:45:41.354 INFO  manager.ListenerWD -- Location of element-->input
+19:45:41.386 INFO  manager.ListenerWD -- Before click element-->inputtext-->
+19:45:41.494 INFO  manager.ListenerWD -- After click element-->input
+19:45:41.552 INFO  manager.ListenerWD -- SendKeys-->
+19:45:41.568 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:41.632 INFO  manager.ListenerWD -- SendKeys-->
+19:45:41.638 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:41.704 INFO  manager.ListenerWD -- SendKeys-->
+19:45:41.705 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:41.787 INFO  manager.ListenerWD -- Before find element-->By.xpath: //button[text()='Login']
+19:45:41.839 INFO  manager.ListenerWD -- After find element-->By.xpath: //button[text()='Login']
+19:45:41.850 INFO  manager.ListenerWD -- Location of element-->button
+19:45:41.866 INFO  manager.ListenerWD -- Before click element-->buttontext-->Login
+19:45:42.014 INFO  tests.TestBase -- Before method finished login
+19:45:42.059 INFO  tests.TestBase -- Name of method (test) ---> addContactSuccessAllFieldsCSV
+19:45:42.061 INFO  manager.TestNGListener -- Start test --> null
+19:45:42.074 INFO  tests.TestBase -- Tests run with data: --->Contact(name=Harry, lastName=Potter, phone=056321478411, email=harry@gmail.com, address=Haifa, description=friend)
+19:45:42.076 INFO  manager.ListenerWD -- Before find element-->By.cssSelector: a[href="/add"]
+19:45:43.015 INFO  manager.ListenerWD -- After find element-->By.cssSelector: a[href="/add"]
+19:45:43.027 INFO  manager.ListenerWD -- Location of element-->a
+19:45:43.052 INFO  manager.ListenerWD -- Before click element-->atext-->ADD
+19:45:43.174 INFO  manager.ListenerWD -- After click element-->a
+19:45:43.175 INFO  manager.ListenerWD -- Before find element-->By.xpath: //input[@placeholder='Name']
+19:45:43.215 INFO  manager.ListenerWD -- After find element-->By.xpath: //input[@placeholder='Name']
+19:45:43.227 INFO  manager.ListenerWD -- Location of element-->input
+19:45:43.259 INFO  manager.ListenerWD -- Before click element-->inputtext-->
+19:45:43.383 INFO  manager.ListenerWD -- After click element-->input
+19:45:43.436 INFO  manager.ListenerWD -- SendKeys-->
+19:45:43.451 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:43.514 INFO  manager.ListenerWD -- SendKeys-->
+19:45:43.521 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:43.586 INFO  manager.ListenerWD -- SendKeys-->
+19:45:43.588 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:43.651 INFO  manager.ListenerWD -- Before find element-->By.xpath: //input[@placeholder='Last Name']
+19:45:43.693 INFO  manager.ListenerWD -- After find element-->By.xpath: //input[@placeholder='Last Name']
+19:45:43.705 INFO  manager.ListenerWD -- Location of element-->input
+19:45:43.735 INFO  manager.ListenerWD -- Before click element-->inputtext-->
+19:45:43.855 INFO  manager.ListenerWD -- After click element-->input
+19:45:43.906 INFO  manager.ListenerWD -- SendKeys-->
+19:45:43.923 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:43.980 INFO  manager.ListenerWD -- SendKeys-->
+19:45:43.987 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:44.052 INFO  manager.ListenerWD -- SendKeys-->
+19:45:44.055 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:44.113 INFO  manager.ListenerWD -- Before find element-->By.xpath: //input[@placeholder='Phone']
+19:45:44.150 INFO  manager.ListenerWD -- After find element-->By.xpath: //input[@placeholder='Phone']
+19:45:44.153 INFO  manager.ListenerWD -- Location of element-->input
+19:45:44.187 INFO  manager.ListenerWD -- Before click element-->inputtext-->
+19:45:44.291 INFO  manager.ListenerWD -- After click element-->input
+19:45:44.348 INFO  manager.ListenerWD -- SendKeys-->
+19:45:44.356 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:44.419 INFO  manager.ListenerWD -- SendKeys-->
+19:45:44.421 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:44.487 INFO  manager.ListenerWD -- SendKeys-->
+19:45:44.487 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:44.564 INFO  manager.ListenerWD -- Before find element-->By.xpath: //input[@placeholder='email']
+19:45:44.608 INFO  manager.ListenerWD -- After find element-->By.xpath: //input[@placeholder='email']
+19:45:44.619 INFO  manager.ListenerWD -- Location of element-->input
+19:45:44.638 INFO  manager.ListenerWD -- Before click element-->inputtext-->
+19:45:44.748 INFO  manager.ListenerWD -- After click element-->input
+19:45:44.801 INFO  manager.ListenerWD -- SendKeys-->
+19:45:44.801 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:44.878 INFO  manager.ListenerWD -- SendKeys-->
+19:45:44.879 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:44.949 INFO  manager.ListenerWD -- SendKeys-->
+19:45:44.954 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:45.022 INFO  manager.ListenerWD -- Before find element-->By.xpath: //input[@placeholder='Address']
+19:45:45.062 INFO  manager.ListenerWD -- After find element-->By.xpath: //input[@placeholder='Address']
+19:45:45.077 INFO  manager.ListenerWD -- Location of element-->input
+19:45:45.105 INFO  manager.ListenerWD -- Before click element-->inputtext-->
+19:45:45.221 INFO  manager.ListenerWD -- After click element-->input
+19:45:45.281 INFO  manager.ListenerWD -- SendKeys-->
+19:45:45.293 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:45.361 INFO  manager.ListenerWD -- SendKeys-->
+19:45:45.363 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:45.431 INFO  manager.ListenerWD -- SendKeys-->
+19:45:45.442 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:45.487 INFO  manager.ListenerWD -- Before find element-->By.xpath: //input[@placeholder='description']
+19:45:45.527 INFO  manager.ListenerWD -- After find element-->By.xpath: //input[@placeholder='description']
+19:45:45.538 INFO  manager.ListenerWD -- Location of element-->input
+19:45:45.564 INFO  manager.ListenerWD -- Before click element-->inputtext-->
+19:45:45.670 INFO  manager.ListenerWD -- After click element-->input
+19:45:45.726 INFO  manager.ListenerWD -- SendKeys-->
+19:45:45.726 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:45.795 INFO  manager.ListenerWD -- SendKeys-->
+19:45:45.795 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:45.864 INFO  manager.ListenerWD -- SendKeys-->
+19:45:45.871 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:45.921 INFO  manager.ListenerWD -- Before find element-->By.cssSelector: .add_main__1tbl_ button
+19:45:45.961 INFO  manager.ListenerWD -- After find element-->By.cssSelector: .add_main__1tbl_ button
+19:45:45.961 INFO  manager.ListenerWD -- Location of element-->button
+19:45:45.995 INFO  manager.ListenerWD -- Before click element-->buttontext-->Save
+19:45:46.100 INFO  manager.ListenerWD -- After click element-->button
+19:45:46.792 INFO  manager.TestNGListener -- Success test --> addContactSuccessAllFieldsCSV
+19:45:46.794 INFO  tests.TestBase -- ===============================================
+19:45:46.798 INFO  tests.TestBase -- Name of method (test) ---> addContactSuccessAllFieldsCSV
+19:45:46.798 INFO  manager.TestNGListener -- Start test --> null
+19:45:46.798 INFO  tests.TestBase -- Tests run with data: --->Contact(name=John, lastName=Lev, phone=0512365410, email=john@lev.com, address=Tel Aviv, description=friend)
+19:45:46.798 INFO  manager.ListenerWD -- Before find element-->By.cssSelector: a[href="/add"]
+19:45:46.831 INFO  manager.ListenerWD -- After find element-->By.cssSelector: a[href="/add"]
+19:45:46.845 INFO  manager.ListenerWD -- Location of element-->a
+19:45:46.868 INFO  manager.ListenerWD -- Before click element-->atext-->ADD
+19:45:46.983 INFO  manager.ListenerWD -- After click element-->a
+19:45:46.984 INFO  manager.ListenerWD -- Before find element-->By.xpath: //input[@placeholder='Name']
+19:45:47.011 INFO  manager.ListenerWD -- After find element-->By.xpath: //input[@placeholder='Name']
+19:45:47.021 INFO  manager.ListenerWD -- Location of element-->input
+19:45:47.050 INFO  manager.ListenerWD -- Before click element-->inputtext-->
+19:45:47.166 INFO  manager.ListenerWD -- After click element-->input
+19:45:47.227 INFO  manager.ListenerWD -- SendKeys-->
+19:45:47.237 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:47.299 INFO  manager.ListenerWD -- SendKeys-->
+19:45:47.310 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:47.368 INFO  manager.ListenerWD -- SendKeys-->
+19:45:47.370 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:47.424 INFO  manager.ListenerWD -- Before find element-->By.xpath: //input[@placeholder='Last Name']
+19:45:47.445 INFO  manager.ListenerWD -- After find element-->By.xpath: //input[@placeholder='Last Name']
+19:45:47.461 INFO  manager.ListenerWD -- Location of element-->input
+19:45:47.488 INFO  manager.ListenerWD -- Before click element-->inputtext-->
+19:45:47.587 INFO  manager.ListenerWD -- After click element-->input
+19:45:47.634 INFO  manager.ListenerWD -- SendKeys-->
+19:45:47.656 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:47.714 INFO  manager.ListenerWD -- SendKeys-->
+19:45:47.723 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:47.776 INFO  manager.ListenerWD -- SendKeys-->
+19:45:47.778 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:47.837 INFO  manager.ListenerWD -- Before find element-->By.xpath: //input[@placeholder='Phone']
+19:45:47.854 INFO  manager.ListenerWD -- After find element-->By.xpath: //input[@placeholder='Phone']
+19:45:47.870 INFO  manager.ListenerWD -- Location of element-->input
+19:45:47.886 INFO  manager.ListenerWD -- Before click element-->inputtext-->
+19:45:47.999 INFO  manager.ListenerWD -- After click element-->input
+19:45:48.051 INFO  manager.ListenerWD -- SendKeys-->
+19:45:48.051 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:48.123 INFO  manager.ListenerWD -- SendKeys-->
+19:45:48.129 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:48.203 INFO  manager.ListenerWD -- SendKeys-->
+19:45:48.217 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:48.306 INFO  manager.ListenerWD -- Before find element-->By.xpath: //input[@placeholder='email']
+19:45:48.344 INFO  manager.ListenerWD -- After find element-->By.xpath: //input[@placeholder='email']
+19:45:48.355 INFO  manager.ListenerWD -- Location of element-->input
+19:45:48.377 INFO  manager.ListenerWD -- Before click element-->inputtext-->
+19:45:48.507 INFO  manager.ListenerWD -- After click element-->input
+19:45:48.575 INFO  manager.ListenerWD -- SendKeys-->
+19:45:48.583 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:48.670 INFO  manager.ListenerWD -- SendKeys-->
+19:45:48.681 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:48.785 INFO  manager.ListenerWD -- SendKeys-->
+19:45:48.800 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:48.913 INFO  manager.ListenerWD -- Before find element-->By.xpath: //input[@placeholder='Address']
+19:45:48.963 INFO  manager.ListenerWD -- After find element-->By.xpath: //input[@placeholder='Address']
+19:45:48.978 INFO  manager.ListenerWD -- Location of element-->input
+19:45:49.015 INFO  manager.ListenerWD -- Before click element-->inputtext-->
+19:45:49.170 INFO  manager.ListenerWD -- After click element-->input
+19:45:49.254 INFO  manager.ListenerWD -- SendKeys-->
+19:45:49.265 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:49.342 INFO  manager.ListenerWD -- SendKeys-->
+19:45:49.351 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:49.422 INFO  manager.ListenerWD -- SendKeys-->
+19:45:49.432 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:49.506 INFO  manager.ListenerWD -- Before find element-->By.xpath: //input[@placeholder='description']
+19:45:49.539 INFO  manager.ListenerWD -- After find element-->By.xpath: //input[@placeholder='description']
+19:45:49.547 INFO  manager.ListenerWD -- Location of element-->input
+19:45:49.579 INFO  manager.ListenerWD -- Before click element-->inputtext-->
+19:45:49.688 INFO  manager.ListenerWD -- After click element-->input
+19:45:49.749 INFO  manager.ListenerWD -- SendKeys-->
+19:45:49.758 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:49.824 INFO  manager.ListenerWD -- SendKeys-->
+19:45:49.828 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:49.892 INFO  manager.ListenerWD -- SendKeys-->
+19:45:49.895 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:49.953 INFO  manager.ListenerWD -- Before find element-->By.cssSelector: .add_main__1tbl_ button
+19:45:49.979 INFO  manager.ListenerWD -- After find element-->By.cssSelector: .add_main__1tbl_ button
+19:45:49.989 INFO  manager.ListenerWD -- Location of element-->button
+19:45:50.011 INFO  manager.ListenerWD -- Before click element-->buttontext-->Save
+19:45:50.101 INFO  manager.ListenerWD -- After click element-->button
+19:45:50.635 INFO  manager.TestNGListener -- Success test --> addContactSuccessAllFieldsCSV
+19:45:50.635 INFO  tests.TestBase -- ===============================================
+19:45:50.637 INFO  tests.TestBase -- Name of method (test) ---> addContactSuccessAllFieldsCSV
+19:45:50.639 INFO  manager.TestNGListener -- Start test --> null
+19:45:50.639 INFO  tests.TestBase -- Tests run with data: --->Contact(name=Tonya, lastName=Fisher, phone=0512000147, email=tonya@mail.com, address=Almaty, description=ahot)
+19:45:50.639 INFO  manager.ListenerWD -- Before find element-->By.cssSelector: a[href="/add"]
+19:45:50.666 INFO  manager.ListenerWD -- After find element-->By.cssSelector: a[href="/add"]
+19:45:50.669 INFO  manager.ListenerWD -- Location of element-->a
+19:45:50.700 INFO  manager.ListenerWD -- Before click element-->atext-->ADD
+19:45:50.821 INFO  manager.ListenerWD -- After click element-->a
+19:45:50.822 INFO  manager.ListenerWD -- Before find element-->By.xpath: //input[@placeholder='Name']
+19:45:50.843 INFO  manager.ListenerWD -- After find element-->By.xpath: //input[@placeholder='Name']
+19:45:50.857 INFO  manager.ListenerWD -- Location of element-->input
+19:45:50.868 INFO  manager.ListenerWD -- Before click element-->inputtext-->
+19:45:50.990 INFO  manager.ListenerWD -- After click element-->input
+19:45:51.054 INFO  manager.ListenerWD -- SendKeys-->
+19:45:51.064 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:51.124 INFO  manager.ListenerWD -- SendKeys-->
+19:45:51.128 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:51.191 INFO  manager.ListenerWD -- SendKeys-->
+19:45:51.195 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:51.253 INFO  manager.ListenerWD -- Before find element-->By.xpath: //input[@placeholder='Last Name']
+19:45:51.281 INFO  manager.ListenerWD -- After find element-->By.xpath: //input[@placeholder='Last Name']
+19:45:51.291 INFO  manager.ListenerWD -- Location of element-->input
+19:45:51.316 INFO  manager.ListenerWD -- Before click element-->inputtext-->
+19:45:51.416 INFO  manager.ListenerWD -- After click element-->input
+19:45:51.459 INFO  manager.ListenerWD -- SendKeys-->
+19:45:51.482 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:51.541 INFO  manager.ListenerWD -- SendKeys-->
+19:45:51.545 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:51.605 INFO  manager.ListenerWD -- SendKeys-->
+19:45:51.611 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:51.662 INFO  manager.ListenerWD -- Before find element-->By.xpath: //input[@placeholder='Phone']
+19:45:51.686 INFO  manager.ListenerWD -- After find element-->By.xpath: //input[@placeholder='Phone']
+19:45:51.686 INFO  manager.ListenerWD -- Location of element-->input
+19:45:51.718 INFO  manager.ListenerWD -- Before click element-->inputtext-->
+19:45:51.815 INFO  manager.ListenerWD -- After click element-->input
+19:45:51.865 INFO  manager.ListenerWD -- SendKeys-->
+19:45:51.876 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:51.931 INFO  manager.ListenerWD -- SendKeys-->
+19:45:51.941 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:51.987 INFO  manager.ListenerWD -- SendKeys-->
+19:45:52.002 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:52.055 INFO  manager.ListenerWD -- Before find element-->By.xpath: //input[@placeholder='email']
+19:45:52.078 INFO  manager.ListenerWD -- After find element-->By.xpath: //input[@placeholder='email']
+19:45:52.088 INFO  manager.ListenerWD -- Location of element-->input
+19:45:52.094 INFO  manager.ListenerWD -- Before click element-->inputtext-->
+19:45:52.201 INFO  manager.ListenerWD -- After click element-->input
+19:45:52.253 INFO  manager.ListenerWD -- SendKeys-->
+19:45:52.261 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:52.313 INFO  manager.ListenerWD -- SendKeys-->
+19:45:52.319 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:52.382 INFO  manager.ListenerWD -- SendKeys-->
+19:45:52.387 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:52.448 INFO  manager.ListenerWD -- Before find element-->By.xpath: //input[@placeholder='Address']
+19:45:52.469 INFO  manager.ListenerWD -- After find element-->By.xpath: //input[@placeholder='Address']
+19:45:52.469 INFO  manager.ListenerWD -- Location of element-->input
+19:45:52.501 INFO  manager.ListenerWD -- Before click element-->inputtext-->
+19:45:52.598 INFO  manager.ListenerWD -- After click element-->input
+19:45:52.648 INFO  manager.ListenerWD -- SendKeys-->
+19:45:52.659 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:52.717 INFO  manager.ListenerWD -- SendKeys-->
+19:45:52.719 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:52.781 INFO  manager.ListenerWD -- SendKeys-->
+19:45:52.787 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:52.837 INFO  manager.ListenerWD -- Before find element-->By.xpath: //input[@placeholder='description']
+19:45:52.861 INFO  manager.ListenerWD -- After find element-->By.xpath: //input[@placeholder='description']
+19:45:52.861 INFO  manager.ListenerWD -- Location of element-->input
+19:45:52.893 INFO  manager.ListenerWD -- Before click element-->inputtext-->
+19:45:53.001 INFO  manager.ListenerWD -- After click element-->input
+19:45:53.041 INFO  manager.ListenerWD -- SendKeys-->
+19:45:53.057 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:53.126 INFO  manager.ListenerWD -- SendKeys-->
+19:45:53.128 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:53.200 INFO  manager.ListenerWD -- SendKeys-->
+19:45:53.203 INFO  manager.ListenerWD -- SendKeys_TagName-->input
+19:45:53.256 INFO  manager.ListenerWD -- Before find element-->By.cssSelector: .add_main__1tbl_ button
+19:45:53.278 INFO  manager.ListenerWD -- After find element-->By.cssSelector: .add_main__1tbl_ button
+19:45:53.278 INFO  manager.ListenerWD -- Location of element-->button
+19:45:53.309 INFO  manager.ListenerWD -- Before click element-->buttontext-->Save
+19:45:53.406 INFO  manager.ListenerWD -- After click element-->button
+19:45:53.994 INFO  manager.TestNGListener -- Success test --> addContactSuccessAllFieldsCSV
+19:45:53.994 INFO  tests.TestBase -- ===============================================
+19:45:53.996 INFO  manager.TestNGListener -- Stop testing on date -->Wed Jun 03 19:45:53 IDT 2026
