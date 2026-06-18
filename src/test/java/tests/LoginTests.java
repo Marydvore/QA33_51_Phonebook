@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.*;
 import manager.DataProviderUser;
 import models.User;
 import org.checkerframework.checker.units.qual.A;
@@ -13,6 +14,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
 
+@Epic("User Auth System")
+@Feature("User login")
+@Owner("QA Team")
 public class LoginTests extends TestBase {
 
     @BeforeMethod(alwaysRun = true)
@@ -25,6 +29,8 @@ public class LoginTests extends TestBase {
     }
 
     @Test(dataProvider = "loginData", dataProviderClass = DataProviderUser.class)
+    @Story("Valid user successfully logs with correct credentials")
+    @Severity(SeverityLevel.BLOCKER)
     public void loginSuccess(String email, String password) {
         logger.info("Start test with name 'loginSuccess'");
         //logger.info("Test data ---> email: 'art276@art.com' & password: '$Art1$2$3456789'");
@@ -61,6 +67,9 @@ public class LoginTests extends TestBase {
     }
 
     @Test(groups = {"smoke"})
+    @Story("Login fails when user enters invalid email")
+    @Severity(SeverityLevel.BLOCKER)
+    @Issue("BUG-201")
     public void loginWrongEmail() {
         logger.info("Test data ---> email: 'margogmail.com' & password: 'Mmar123456$'");
         app.getHelperUser().openLoginRegistrationForm();

@@ -1,5 +1,6 @@
 package manager;
 
+import io.qameta.allure.Step;
 import models.Contact;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -14,11 +15,13 @@ public class HelperContact extends HelperBase {
         super(wd);
     }
 
+    @Step("Open contact form")
     public void openContactForm() {
         //pause(2000);
         click(By.cssSelector("a[href=\"/add\"]"));// a[href='/add']
     }
 
+    @Step("Fill contact form")
     public void fillContactForm(Contact contact) {
         type(By.xpath("//input[@placeholder='Name']"), contact.getName());
         //cssSelector("[placeholder='Name']")
@@ -35,6 +38,7 @@ public class HelperContact extends HelperBase {
         //pause(3000);
     }
 
+    @Step("Save contact")
     public void saveContact() {
         click(By.cssSelector(".add_main__1tbl_ button")); // ".add_form__2rsm2>button"
     }
@@ -49,6 +53,7 @@ public class HelperContact extends HelperBase {
         return false;
     }
 
+    @Step("Check that contact with {phone} is added")
     public boolean isContactAddedByPhone(String phone) {
         List<WebElement> list = wd.findElements(By.cssSelector("h3"));
         for (WebElement element : list) {
@@ -69,6 +74,7 @@ public class HelperContact extends HelperBase {
     }
 
 
+    @Step("Remove a single contact")
     public int removeOneContact() {
         int before = countOfContacts();
         logger.info("Number of Contacts before remove is -->" + before);
@@ -90,6 +96,7 @@ public class HelperContact extends HelperBase {
         return list.size();
     }
 
+    @Step("Remove all contacts")
     public void removeAllContacts() {
         while (countOfContacts() != 0) {
             removeOneContact();

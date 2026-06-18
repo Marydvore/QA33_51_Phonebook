@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'io.qameta.allure' version '2.12.0'
 }
 
 group = 'org.example'
@@ -20,14 +21,20 @@ dependencies {
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.38'
 
     implementation 'ch.qos.logback:logback-classic:1.5.8'
+
+    testImplementation 'io.qameta.allure:allure-testng:2.29.1'
 }
 
 test {
-    useTestNG()
+    useTestNG() {
+        listeners.add('io.qameta.allure.testng.AllureTestNg')
+    }
 }
 
 tasks.register('qa', Test) {
     useTestNG() {
+        listeners.add('io.qameta.allure.testng.AllureTestNg')
+
         def suite = System.getProperty('suite', '')
         if (suite.equals('quick')) {
             suites 'src/test/resources/quick.xml'
@@ -43,6 +50,8 @@ tasks.register('qa', Test) {
 }
 tasks.register('scope', Test) {
     useTestNG() {
+        listeners.add('io.qameta.allure.testng.AllureTestNg')
+
         suites 'src/test/resources/scope.xml'
     }
     if (project.hasProperty('browser')) {
@@ -52,6 +61,8 @@ tasks.register('scope', Test) {
 
 tasks.register('groups', Test){
     useTestNG(){
+        listeners.add('io.qameta.allure.testng.AllureTestNg')
+
         def groups = System.getProperty('groups')
         if (groups != null) {
             includeGroups groups

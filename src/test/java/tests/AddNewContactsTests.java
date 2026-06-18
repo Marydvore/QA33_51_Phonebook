@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.*;
 import manager.DataProviderContact;
 import models.Contact;
 import models.User;
@@ -8,6 +9,9 @@ import org.testng.annotations.*;
 
 import java.util.Random;
 
+@Epic("Contact Management System")
+@Feature("Add contacts")
+@Owner("Mariya Dvoretskiy")
 public class AddNewContactsTests extends TestBase {
 
     @BeforeClass(alwaysRun = true)
@@ -20,6 +24,9 @@ public class AddNewContactsTests extends TestBase {
     }
 
     @Test(dataProvider = "contactSuccess", dataProviderClass = DataProviderContact.class)
+    @Story("User successfully adds a new contact with all fields")
+    @Severity(SeverityLevel.CRITICAL)
+    @Link(value = "Test Case TC-301", url = "https//example.com/aaa/")
     public void addNewContactSuccessAllFields(Contact contact) {
         int i = new Random().nextInt(1000) + 10000000;
         int z = (int) (System.currentTimeMillis() / 1000 % 3600);
